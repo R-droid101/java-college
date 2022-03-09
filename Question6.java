@@ -9,8 +9,7 @@ public class Question6 {
             if (dictPosition == len) // if encountered all the keys, then break
                 break;
             if (chars[i] == '\'' && chars[i + 2] == '\'') // checking for a key
-                keys[dictPosition++] = chars[i + 1]; // if key found, appending to the keys array
-            
+                keys[dictPosition++] = chars[i + 1]; // if key found, appending to the keys array            
         }
         return keys;
     }

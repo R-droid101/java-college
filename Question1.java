@@ -13,32 +13,35 @@ public class Question1 {
         System.out.println("Enter " + n + " students' details:");
         for(int i = 0; i < n; i++) {
             if(sc.hasNextInt()) { // Checking if the input is registration number
-                int rno = sc.nextInt();
-                if(rno > great) 
-                    great = rno;
-                if(rno < least)
-                    least = rno;
+                int regNo = sc.nextInt();
+                if(regNo > great) 
+                    great = regNo;
+                if(regNo < least)
+                    least = regNo;
                 regCount++;
+                sc.nextLine();
             }
             else if(sc.hasNextFloat()) { // checking if input is CGPA
                 float cgpa = sc.nextFloat();
                 sum += cgpa;
                 cgpaCount++;
+                sc.nextLine();
             }
             else { // Checking if input is name
-                String name = sc.next();
+                // sc.next();
+                String name = sc.nextLine();
                 names += name + ", ";
                 nameCount++;
             }
         }
         // printing out the details
-        System.out.println("\n\nNumber of registration numbers: " + regCount);
+        System.out.println("\nNumber of registration numbers: " + regCount);
         System.out.println("Number of CGPA: " + cgpaCount);
         System.out.println("Number of names: " + nameCount);
-        System.out.println("Greatest registration number: " + great);
-        System.out.println("Least registration number: " + least);
         if(cgpaCount != 0) 
             System.out.println("Average CGPA: " + (sum / cgpaCount));
+        System.out.println("Least registration number: " + least);
+        System.out.println("Greatest registration number: " + great);
         System.out.println("Names: " + names.substring(0, names.length() - 2));
 
         sc.close();

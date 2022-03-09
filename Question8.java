@@ -27,10 +27,10 @@ class Faculty { // faculty class
             if (indTotal > max)
                 max = indTotal; // finding what the max score is
         }
-        printInternalMax();
+        printMarks();
     }
 
-    private void printInternalMax() { // ask ma'am and then finish
+    private void printMarks() { // utility function
         System.out.println("Highest Internal Marks: " + max);
     }
 
