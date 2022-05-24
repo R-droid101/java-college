@@ -1,0 +1,6 @@
+Did Brown drink coffee? (AUX N V N)
+Coffee is brown (N AUX ADJ)
+Swift is a car (N AUX DET N)
+Car is brown (N AUX ADJ)
+Brown had a swift drive (N AUX DET ADJ N)
+Did Brown drive? (AUX N V)
